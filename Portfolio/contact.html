@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Anagha – Contact page." />
+  <title>Anagha | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="container nav">
+    <a class="logo" href="index.html">Anagha</a>
+    <button class="nav-toggle" aria-label="Open Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <header>
+    <h1>Contact</h1>
+    <p class="muted">I’d love to hear from you. Fill the form or reach me on LinkedIn.</p>
+  </header>
+
+  <section class="grid-2">
+    <article>
+      <form id="contact-form" class="card" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <p id="form-status" class="muted" aria-live="polite"></p>
+      </form>
+    </article>
+
+    <aside>
+      <h2>Connect</h2>
+      <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p><a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a></p>
+      <h2>Embedded LinkedIn (iframe)</h2>
+      <iframe
+        class="iframe-card"
+        src="https://www.linkedin.com/embed/feed/update/urn:li:share:1234567890"
+        title="LinkedIn Post"
+        loading="lazy">
+      </iframe>
+      <p class="muted">Replace the LinkedIn embed URL with your post or profile embed.</p>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Anagha.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Anagha V P – Portfolio, skills, education." />
+  <title>Anagha | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- jQuery CDN -->
+  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="container nav">
+    <a class="logo" href="index.html">Anagha</a>
+    <img src="images/profile circle.png" alt="My Photo" class="profile-pic">
+    <button class="nav-toggle" aria-label="Open Menu">☰</button>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>                          
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-text">
+      <p id="greeting" class="greeting" aria-live="polite">Hello!</p>
+      <h1>I’m <span class="accent">Anagha</span></h1>
+      <p class="sub">• Aspiring Data Analyst • Artist</p>
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="articles-title">
+  <h2 id="articles-title">Articles of My Interest</h2>
+  <ul id="devto-list" class="card-list" aria-busy="true">
+  <p class="sub">No articles to show</p>
+    <!-- populated by JS -->
+  </ul>
+  <div id="devto-error" class="error" role="alert" hidden></div>
+</section>
+
+
+  <!-- Quick Weather (REST API) -->
+  <section class="container" aria-labelledby="weather-title">
+    <h2 id="weather-title">Know Your Weather Here</h2>
+    <div class="weather-box">
+      <label for="city-input" class="sr-only">City</label>
+      <input id="city-input" type="text" placeholder="Enter city (e.g., Kochi)" />
+      <button id="get-weather" class="btn">Get Weather</button>
+      <div id="weather-result" class="weather-result" aria-live="polite"></div>
+      <div id="weather-error" class="error" role="alert" hidden></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Anagha. All rights reserved.</p>
+    <p><a href="https://github.com/anaghavp25" target="_blank" rel="noopener">GitHub</a> · 
+       <a href="https://www.linkedin.com/in/anagha-vp-31268b292/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</footer>
+</body>
+</html>
